@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"4c17b356aca7abcc","type":"text","text":"Neuron","x":-410,"y":-272,"width":250,"height":60},
+		{"id":"6ae6f3b73aa6fb9a","type":"text","text":"Layered Neurons","x":-410,"y":320,"width":251,"height":50},
+		{"id":"42b5299c61143919","type":"text","text":"OUTPUT = Dot product(input, Weight) + Base","x":-22,"y":120,"width":462,"height":50,"color":"1"},
+		{"id":"8938082a847c1082","type":"file","file":"1.Introduction to neural networks/images/Pasted image 20260309220321.png","x":-260,"y":480,"width":735,"height":280},
+		{"id":"f89794a431f91cf5","type":"file","file":"1.Introduction to neural networks/images/Pasted image 20260309222523.png","x":114,"y":1040,"width":599,"height":134},
+		{"id":"a557de55de4b5d04","type":"file","file":"1.Introduction to neural networks/images/Pasted image 20260309222906.png","x":0,"y":1340,"width":517,"height":280},
+		{"id":"f3ad1a0406f494c7","type":"file","file":"1.Introduction to neural networks/images/Pasted image 20260309220426.png","x":-159,"y":-140,"width":688,"height":160},
+		{"id":"92dae208c6d9cf03","type":"file","file":"1.Introduction to neural networks/Input.md","x":-460,"y":-771,"width":380,"height":411},
+		{"id":"227549387bbb2270","type":"file","file":"1.Introduction to neural networks/Weight.md","x":14,"y":-760,"width":400,"height":400},
+		{"id":"ea9167c15165c0d0","type":"file","file":"1.Introduction to neural networks/Bias(B).md","x":713,"y":-771,"width":400,"height":400},
+		{"id":"04c36fde2b758717","type":"file","file":"1.Introduction to neural networks/Dot product in Numpy ~np.dot().md","x":840,"y":-180,"width":520,"height":420}
+	],
+	"edges":[
+		{"id":"59faf1586506f3df","fromNode":"4c17b356aca7abcc","fromSide":"right","toNode":"f3ad1a0406f494c7","toSide":"top"},
+		{"id":"04bda99261d8cc28","fromNode":"f3ad1a0406f494c7","fromSide":"bottom","toNode":"42b5299c61143919","toSide":"top"},
+		{"id":"68f215c1c55979d4","fromNode":"6ae6f3b73aa6fb9a","fromSide":"right","toNode":"8938082a847c1082","toSide":"top"},
+		{"id":"926f2642bf300dfe","fromNode":"8938082a847c1082","fromSide":"bottom","toNode":"f89794a431f91cf5","toSide":"top"},
+		{"id":"4e3df557d7c94cb3","fromNode":"f89794a431f91cf5","fromSide":"bottom","toNode":"a557de55de4b5d04","toSide":"top"}
+	]
+}

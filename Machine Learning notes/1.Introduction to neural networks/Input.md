@@ -1,0 +1,1 @@
+These represent the **raw data** being fed into the neural network. In the examples provided, they are stored as a **list of numbers** (e.g., `inputs = [1, 2, 3]`)

@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "407eba4c8e2612e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "6831ee2f45b817fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "780a73de25e39c1e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "2.Activation function/Activation Function.canvas",
+                "viewState": {
+                  "x": 305.54226905819587,
+                  "y": 380.01195151862356,
+                  "zoom": -1.4919179038573147
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Activation Function"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9a987bb87eed396e",
+    "type": "split",
+    "children": [
+      {
+        "id": "25faf3af8e77de4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0c8eac7b6fcc36a0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e70fd2880a33c5d3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0f3efa1040723a75",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "c2730f4a52d15db8",
+    "type": "split",
+    "children": [
+      {
+        "id": "52df48fb42d4e38b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c35ab1119b629b83",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Day-1/neuron.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for neuron"
+            }
+          },
+          {
+            "id": "f96ec56235afe904",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Day-1/neuron.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from neuron"
+            }
+          },
+          {
+            "id": "479712d0265f9d91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ade02b0bc24d2e1c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3833009bff9876aa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Day-1/neuron.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of neuron"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "780a73de25e39c1e",
+  "lastOpenFiles": [
+    "2.Activation function/ReLU (Activation Class).md",
+    "How it works.canvas",
+    "3.Loss Function",
+    "2.Activation function/Activation Function.canvas",
+    "2.Activation function/Activation Function.md",
+    "2.Activation function/Softmax.md",
+    "2.Activation function/Sigmoid.md",
+    "2.Activation function/Leaky ReLU.md",
+    "2.Activation function/meathods.md",
+    "2.Activation function/Broadcasting Rules.md",
+    "2.Activation function/Basic Numpy.md",
+    "1.Introduction to neural networks/Bias(B).md",
+    "2.Activation function/Images/Pasted image 20260313194036.png",
+    "2.Activation function/Images/Pasted image 20260313194035.png",
+    "1.Introduction to neural networks/neuron.canvas",
+    "2.Activation function/Images/Pasted image 20260310210826.png",
+    "2.Activation function/Images",
+    "1.Introduction to neural networks/Data.md",
+    "2.Activation function",
+    "Input.md",
+    "Neural Networks/Numpy.canvas",
+    "1.Introduction to neural networks/images/Pasted image 20260310203445.png",
+    "1.Introduction to neural networks/Dot product in Numpy ~np.dot().md",
+    "1.Introduction to neural networks/Weight.md",
+    "1.Introduction to neural networks/Input.md",
+    "1.Introduction to neural networks/images/Pasted image 20260309222906.png",
+    "1.Introduction to neural networks/Neuron.md"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"ecd1b7e18ad39811","type":"file","file":"2.Activation function/Basic Numpy.md","x":-475,"y":-1570,"width":416,"height":220,"color":"2"},
+		{"id":"96408f22e300bb70","type":"file","file":"2.Activation function/Broadcasting Rules.md","x":81,"y":-1960,"width":440,"height":354,"color":"2"},
+		{"id":"4e7b6ac715f86ba3","type":"text","text":"Sigmod","x":151,"y":-365,"width":116,"height":60,"color":"2"},
+		{"id":"66d6fc61bf8388cd","type":"text","text":"ReLU","x":-360,"y":-365,"width":111,"height":60,"color":"2"},
+		{"id":"849325d4fddc7b02","type":"text","text":"Linear","x":-868,"y":-551,"width":148,"height":71,"color":"2"},
+		{"id":"df2c2a919bbbf88f","type":"text","text":"Linear meanthod will not allow networks to learn non-linear data","x":-926,"y":-305,"width":265,"height":110,"color":"1"},
+		{"id":"415466f78d5eef1e","type":"text","text":"Non Linear","x":-120,"y":-540,"width":140,"height":50,"color":"2"},
+		{"id":"d7687dce734cbfeb","type":"file","file":"2.Activation function/ReLU (Activation Class).md","x":-926,"y":0,"width":400,"height":400,"color":"6"},
+		{"id":"439300ecfc0f38e9","type":"file","file":"2.Activation function/Leaky ReLU.md","x":-322,"y":0,"width":400,"height":400,"color":"6"},
+		{"id":"946c2516fab808e1","type":"file","file":"2.Activation function/Sigmoid.md","x":267,"y":0,"width":400,"height":400,"color":"6"},
+		{"id":"d17a7781e26f7846","type":"text","text":"Softmax","x":667,"y":-365,"width":133,"height":60,"color":"2"},
+		{"id":"5fb729c8a9ce65e8","type":"file","file":"2.Activation function/Softmax.md","x":960,"y":0,"width":400,"height":400,"color":"6"},
+		{"id":"1fcdb6ebc6d3daec","type":"file","file":"2.Activation function/Activation Function.md","x":180,"y":-1320,"width":689,"height":330,"color":"2"},
+		{"id":"69044af8de167aa0","type":"file","file":"2.Activation function/Images/Pasted image 20260313194035.png","x":-1147,"y":-1320,"width":972,"height":708},
+		{"id":"cb14202eb6ffca18","type":"text","text":"        HIDDEN LAYER\n\n\n Usually use **ReLU** (fast, efficient, simple).","x":-122,"y":720,"width":247,"height":329,"color":"4"},
+		{"id":"9cbe2083efaeaa67","type":"text","text":"\t OUTPUT LAYER\n\nUse **Sigmoid** for \"Yes/No\" (Binary).\n    \n Use **Softmax** for \"Which one of these many?\" (Multiclass).","x":299,"y":720,"width":250,"height":329,"color":"4"},
+		{"id":"097d0c46b453ada9","x":731,"y":727,"width":250,"height":316,"color":"1","type":"text","text":"        LOSS FUNCTION"},
+		{"id":"6416d482e1c8a44b","x":138,"y":1320,"width":300,"height":264,"color":"1","type":"text","text":"      Backward Propogation"},
+		{"id":"797a801815964ebc","type":"text","text":"INPUT LAYER","x":-555,"y":860,"width":194,"height":50,"color":"4"}
+	],
+	"edges":[
+		{"id":"80b7b384bf08699a","fromNode":"96408f22e300bb70","fromSide":"left","toNode":"ecd1b7e18ad39811","toSide":"top"},
+		{"id":"d274b704c4433645","fromNode":"ecd1b7e18ad39811","fromSide":"right","toNode":"1fcdb6ebc6d3daec","toSide":"top"},
+		{"id":"e21e6a463267368c","fromNode":"415466f78d5eef1e","fromSide":"bottom","toNode":"66d6fc61bf8388cd","toSide":"top"},
+		{"id":"8497da5c1d0ab7ad","fromNode":"415466f78d5eef1e","fromSide":"bottom","toNode":"4e7b6ac715f86ba3","toSide":"top"},
+		{"id":"0d35ee45d2955096","fromNode":"849325d4fddc7b02","fromSide":"bottom","toNode":"df2c2a919bbbf88f","toSide":"top"},
+		{"id":"06c94463774535a2","fromNode":"66d6fc61bf8388cd","fromSide":"bottom","toNode":"d7687dce734cbfeb","toSide":"top"},
+		{"id":"b9f398acb4fbd2c0","fromNode":"66d6fc61bf8388cd","fromSide":"bottom","toNode":"439300ecfc0f38e9","toSide":"top"},
+		{"id":"c6fdb886188b7b36","fromNode":"1fcdb6ebc6d3daec","fromSide":"bottom","toNode":"415466f78d5eef1e","toSide":"top"},
+		{"id":"520de9b432c8bb1e","fromNode":"4e7b6ac715f86ba3","fromSide":"bottom","toNode":"946c2516fab808e1","toSide":"top"},
+		{"id":"16a99a58121394bb","fromNode":"797a801815964ebc","fromSide":"right","toNode":"cb14202eb6ffca18","toSide":"left"},
+		{"id":"f1ba3d21e30f36fc","fromNode":"cb14202eb6ffca18","fromSide":"right","toNode":"9cbe2083efaeaa67","toSide":"left"},
+		{"id":"4e188a84d3c2b459","fromNode":"415466f78d5eef1e","fromSide":"bottom","toNode":"d17a7781e26f7846","toSide":"top"},
+		{"id":"7bec06b54b015906","fromNode":"d17a7781e26f7846","fromSide":"bottom","toNode":"5fb729c8a9ce65e8","toSide":"top"},
+		{"id":"a5831b7e26bd069c","fromNode":"9cbe2083efaeaa67","fromSide":"right","toNode":"097d0c46b453ada9","toSide":"left"},
+		{"id":"2a22454bbf353961","fromNode":"097d0c46b453ada9","fromSide":"bottom","toNode":"6416d482e1c8a44b","toSide":"right"},
+		{"id":"69a9eee02a43f366","fromNode":"6416d482e1c8a44b","fromSide":"left","toNode":"797a801815964ebc","toSide":"bottom"}
+	]
+}
