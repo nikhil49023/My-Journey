@@ -1,0 +1,12 @@
+services:
+  learning-lab:
+    build: .
+    volumes:
+      - .:/learning_lab
+    ports:
+      - "8888:8888" # Jupyter Lab
+      - "8080:8080" # PWA Preview
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true

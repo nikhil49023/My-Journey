@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 01: Tensors & Data Flow</title>
+    <link rel="manifest" href="data:application/json;base64,ewogICJnameiOiAiUHlUb3JjaCBMZWFybmluZyBMYWIiLAogICJzaG9ydF9uYW1lIjogIkxlYXJuaW5nTGFiIiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxMjEyMTIiLAogICJ0aGVtZV9jb2xvciI6ICIjQkI4NkZDIgp9">
+    <style>
+        :root {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --primary: #bb86fc;
+            --secondary: #03dac6;
+            --text: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            border-bottom: 1px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 { font-size: 2.5rem; color: var(--primary); margin: 0; }
+        .subtitle { color: var(--text-dim); font-size: 1.1rem; }
+        
+        .card {
+            background: var(--surface);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+        h2 { color: var(--secondary); border-left: 4px solid var(--secondary); padding-left: 15px; }
+        
+        .quick-notes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .note-item {
+            background: rgba(187, 134, 252, 0.05);
+            border: 1px solid rgba(187, 134, 252, 0.2);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .mind-map {
+            width: 100%;
+            height: 300px;
+            background: #161616;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .node {
+            background: var(--surface);
+            border: 2px solid var(--primary);
+            padding: 10px 20px;
+            border-radius: 20px;
+            position: absolute;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        code {
+            background: #000;
+            color: #dcdcaa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+        }
+        
+        .quiz {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .btn {
+            background: var(--primary);
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .btn:hover { opacity: 0.9; }
+        
+        #feedback { margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Module 01: Tensors & Data Flow</h1>
+            <p class="subtitle">The foundation of everything in PyTorch.</p>
+        </header>
+
+        <section class="card">
+            <h2>🧠 Mind-Map: Tensor Ecosystem</h2>
+            <div class="mind-map">
+                <!-- Simple SVG/HTML Mind Map -->
+                <div class="node" style="top: 120px; left: 350px;">Tensors</div>
+                <div class="node" style="top: 40px; left: 150px;">CPU / GPU</div>
+                <div class="node" style="top: 200px; left: 150px;">Autograd</div>
+                <div class="node" style="top: 40px; left: 550px;">Shapes</div>
+                <div class="node" style="top: 200px; left: 550px;">Dtypes</div>
+                <svg width="100%" height="100%" style="position:absolute; z-index:-1;">
+                    <line x1="400" y1="135" x2="200" y2="60" stroke="#333" stroke-width="2" />
+                    <line x1="400" y1="135" x2="200" y2="210" stroke="#333" stroke-width="2" />
+                    <line x1="450" y1="135" x2="600" y2="60" stroke="#333" stroke-width="2" />
+                    <line x1="450" y1="135" x2="600" y2="210" stroke="#333" stroke-width="2" />
+                </svg>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>📝 Quick Notes</h2>
+            <div class="quick-notes">
+                <div class="note-item"><strong>Creation:</strong> <code>torch.tensor()</code>, <code>torch.randn()</code></div>
+                <div class="note-item"><strong>Math:</strong> <code>matmul</code>, <code>sum</code>, <code>mean</code></div>
+                <div class="note-item"><strong>Autograd:</strong> <code>requires_grad=True</code>, <code>backward()</code></div>
+                <div class="note-item"><strong>Device:</strong> <code>.to('cuda')</code>, <code>.device</code></div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🎓 Concept Deep Dive</h2>
+            <p>In PyTorch, a <strong>Tensor</strong> is more than just an array. It is a mathematical entity that carries its own history (via Autograd) and can be teleported between your CPU and GPU with a single command.</p>
+            <h3>The Golden Rule of Shapes</h3>
+            <p>Deep learning is 90% debugging shape mismatches. Always check <code>tensor.shape</code> before performing operations like matrix multiplication.</p>
+        </section>
+
+        <section class="card quiz">
+            <h2>❓ Quick Check</h2>
+            <p>If you have a tensor <code>x</code> with <code>requires_grad=True</code>, and you calculate <code>y = x * 2</code>, what command do you call to compute the gradient?</p>
+            <input type="text" id="answer" style="background:#333; color:white; border:1px solid #555; padding:8px; border-radius:4px; width:200px;">
+            <button class="btn" onclick="checkAnswer()">Submit Answer</button>
+            <div id="feedback"></div>
+        </section>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const ans = document.getElementById('answer').value.toLowerCase().trim();
+            const feedback = document.getElementById('feedback');
+            if (ans.includes('backward')) {
+                feedback.innerText = "✅ Correct! y.backward() calculates the gradients.";
+                feedback.style.color = "var(--secondary)";
+            } else {
+                feedback.innerText = "❌ Not quite. Think about moving 'backwards' through the graph.";
+                feedback.style.color = "#ff5252";
+            }
+        }
+
+        // Simple Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            const swCode = `
+                self.addEventListener('fetch', function(event) {
+                    event.respondWith(fetch(event.request));
+                });
+            `;
+            const blob = new Blob([swCode], {type: 'application/javascript'});
+            const url = URL.createObjectURL(blob);
+            navigator.serviceWorker.register(url);
+        }
+    </script>
+</body>
+</html>
